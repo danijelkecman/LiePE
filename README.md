@@ -41,7 +41,7 @@ If we require:
 - continuity,
 
 then the relative-position interaction depends only on the offset
-```\tau = t - s```. Writing that interaction as ```A(\tau)```, the assumptions force:
+$\tau = t - s$. Writing that interaction as $A(\tau)$, the assumptions force:
 
 ```math
 A(\tau + \sigma) = A(\tau)A(\sigma), \quad A(0)=I
@@ -63,7 +63,7 @@ encodings is already quite small.
 
 ### Diagonalizable generators
 
-If ```B``` is diagonalizable, its components reduce to familiar behaviors:
+If $B$ is diagonalizable, its components reduce to familiar behaviors:
 
 - real eigenvalues give exponential growth or decay,
 - purely zero eigenvalues recover NoPE,
@@ -75,8 +75,8 @@ different faces of the same underlying construction.
 
 ### Defective generators
 
-If ```B``` is not diagonalizable, Jordan blocks appear. Those introduce polynomial
-factors into ```A(t)``` in addition to any exponential or oscillatory behavior.
+If $B$ is not diagonalizable, Jordan blocks appear. Those introduce polynomial
+factors into $A(t)$ in addition to any exponential or oscillatory behavior.
 
 That is the unusual corner of the design space explored here. The point is not
 that JordanPE is expected to dominate RoPE on language tasks. The point is that
@@ -188,11 +188,11 @@ position-velocity evolution naturally produces this kind of block structure.
 
 ### LearnedLiePE
 
-A small learnable generator matrix ```B```, with optional stability regularization.
+A small learnable generator matrix $B$, with optional stability regularization.
 
 This is intentionally experimental. It can become unstable if the generator has
-eigenvalues with positive real parts, i.e. ```\Re(\lambda_i(B)) > 0``` for some
-eigenvalue ```\lambda_i```.
+eigenvalues with positive real parts, i.e. $\Re(\lambda_i(B)) > 0$ for some
+eigenvalue $\lambda_i$.
 
 ## Installation
 
