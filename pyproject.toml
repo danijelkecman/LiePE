@@ -1,0 +1,9 @@
+[project]
+name = "liepe"
+version = "0.1.0"
+description = "Group-theoretic positional encoding experiments in PyTorch"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
