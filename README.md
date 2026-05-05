@@ -12,7 +12,7 @@ one-parameter matrix group:
 A(t) = \exp(tB)
 ```
 
-where ```B``` is a generator matrix.
+where $B$ is a generator matrix.
 
 This repository turns that perspective into code. It implements standard
 baselines like NoPE, RoPE, exponential decay, damped RoPE, and ALiBi, plus an
@@ -24,8 +24,8 @@ Positional encodings are often introduced as isolated tricks. The Jane Street
 article gives a cleaner framing: start from the attention score, impose a few
 reasonable structural assumptions, and see what the mathematics permits.
 
-Suppose queries and keys at time ```t``` are transformed by linear maps ```F(t)``` and
-```G(t)```. Then the modified attention score between times ```t``` and ```s``` is governed
+Suppose queries and keys at time $t$ are transformed by linear maps $F(t)$ and
+$G(t)$. Then the modified attention score between times $t$ and $s$ is governed
 by the matrix
 
 ```math
